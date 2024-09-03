@@ -1,0 +1,16 @@
+def countOdds(arr):
+  data = helper(arr, 0, [])
+  print(data)
+
+
+def helper(arr, index, res):
+  # base condition
+  if index == len(arr):
+    return res
+  
+  # add the number to the res if it is odd
+  if arr[index] % 2 != 0:
+    res.append(arr[index])
+  return helper(arr, index+1, res)
+
+countOdds([1, 7, 10, 3, 5, 9])
