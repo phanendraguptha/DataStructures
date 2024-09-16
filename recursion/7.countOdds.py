@@ -15,6 +15,9 @@ def helper(arr, index, res):
 
 # countOdds([1, 7, 10, 3, 5, 9])
 
+
+# This function returns the list without taking extra arguments
+# Add the values in the current list which are returned from the prev function calls
 def countOdds2(arr):
   data = helper(arr, 0)
   print(data)
